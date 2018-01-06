@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <title>input-select component test</title>
+    <script src="../bower_components/custom-elements/custom-elements.min.js"></script>
+    <script src="../bower_components/shadydom/shadydom.min.js"></script>
+    <script src="../bower_components/web-component-tester/browser.js"></script>
+    <script src="../input-select.js"></script>
+  </head>
+  <body>
+    <test-fixture id="input-select-fixture">
+      <template>
+        <input-select>What?!</input-select>
+      </template>
+    </test-fixture>
+    <script>
+      suite('<input-select>', function() {
+        let component;
+        setup(() => {
+          component = fixture('input-select-fixture');
+        });
+        test('renders div', () => {
+          assert.isOk(component.shadowRoot.querySelector('div'));
+        });
+      });
+    </script>
+  </body>
+</html>

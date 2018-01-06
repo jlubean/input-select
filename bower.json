@@ -1,0 +1,23 @@
+{
+  "name": "input-select",
+  "description": "",
+  "main": "input-select.js",
+  "authors": [
+    "Jason LuBean <jlubean@familysearch.org>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "custom-elements": "webcomponents/custom-elements#^1.0.6",
+    "shadydom": "webcomponents/shadydom#^1.0.9",
+    "web-component-tester": "^6.4.1"
+  }
+}
